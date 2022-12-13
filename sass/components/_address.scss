@@ -1,0 +1,52 @@
+.address {
+  display: flex;
+  color: var(--color-grey2);
+  font-size: 0.875rem;
+  line-height: 1.14;
+  font-weight: 500;
+  text-decoration: none;
+
+  &__section {
+    display: flex;
+    align-items: center;
+    color: var(--color-grey2);
+    fill: var(--color-grey2);
+
+    @extend .transition;
+
+    &:hover,
+    &:focus {
+      color: var(--color-blue);
+    }
+
+    &--padding {
+      padding-left: 1.875rem;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      fill: currentColor;
+    }
+    @extend .highlight;
+    @extend .transition;
+  }
+
+  &__link {
+    padding-left: 0.625rem;
+    color: inherit;
+    @extend .address; 
+
+    &:hover,
+    &:focus {
+      color: currentColor;
+    }
+
+    @extend .highlight;
+    @extend .transition;
+  }
+}

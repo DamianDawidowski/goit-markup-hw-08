@@ -1,0 +1,60 @@
+.footer {
+  background-color: var(--color-grey3);
+  width: 100%;
+
+  &__area {
+    padding: 3.75rem 0;
+    height: 15.75rem;
+    display: flex;
+    color: var(--color-white);
+    text-decoration: none;
+
+    @extend .container;
+  }
+
+  &__subarea {
+    @extend .container;
+  }
+
+  &__logo {
+    &--padding {
+      padding-bottom: 1.25rem;
+    }
+  }
+
+  &__address {
+    font-size: 0.875rem;
+    color: var(--color-white);
+    line-height: 1.71;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+
+    &--padding {
+      padding: 0.5625rem 0;
+    }
+
+    @extend .highlight;
+    @extend .transition;
+  }
+
+  &__socialarea {
+    padding: 0.75rem 0 6.25rem 4.375rem;
+    color: var(--color-white);
+  }
+
+  &__comment {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.19;
+    color: var(--color-white);
+  }
+
+  &__socials {
+    padding-top: 1.25rem;
+  }
+
+  &__newsletter {
+    padding: 0.75rem 0 0 4.875rem;
+  }
+}

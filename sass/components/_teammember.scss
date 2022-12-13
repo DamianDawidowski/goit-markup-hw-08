@@ -1,0 +1,27 @@
+.teammember {
+  background-color: var(--color-white);
+  box-shadow: 0px 1px 3px var(--color-black2), 0px 1px 1px var(--color-black2),
+    0px 2px 1px var(--color-black2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 0px 0.25rem 0.25rem;
+
+  &__name {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.19;
+    padding: 1.875rem 0 0.625rem;
+  }
+
+  &__role {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-grey2);
+    line-height: 1.14;
+  }
+
+  &__socials {
+    padding: 1rem 2rem 1.125rem;
+  }
+}

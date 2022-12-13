@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid var(--color-white3);
+}
+
+.header__body {
+  background-color: var(--color-white);
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75rem;
+
+  @extend .container;
+}

@@ -1,0 +1,40 @@
+.effsolutions {
+  background-image: linear-gradient(var(--color-background), var(--color-background)),
+    url(../images/banners/background.jpg);
+  max-width: 100rem;
+  margin: 0 auto;
+
+  &__section {
+    height: 37.5rem;
+    width: 75rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 2.75rem;
+    line-height: 1.36;
+    font-weight: 900;
+    color: var(--color-white);
+    width: 43.5rem;
+    text-transform: uppercase;
+    padding-bottom: 1.875rem;
+  }
+
+  &__button {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.875;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    font-weight: 700;
+    border-radius: 0.25rem;
+    border-color: var(--color-blue);
+    width: 12.4375rem;
+    padding: 0.625rem 0;
+  }
+}

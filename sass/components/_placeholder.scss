@@ -1,0 +1,40 @@
+.placeholder {
+  width: 100%;
+
+  &__section {
+    min-height: 27.4375rem;
+    @extend .section;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    height: 6.3125rem;
+    @extend .container;
+  }
+
+  &__icon {
+    padding: 1.5625rem 6.25rem;
+    background-color: var(--color-white2);
+  }
+
+  &__titlegroup {
+    padding-top: 1.875rem;
+    width: 16.875rem;
+    letter-spacing: 0.03em;
+  }
+
+  &__title {
+    font-size: 0.875rem;
+    line-height: 1.14;
+    font-weight: 700;
+  }
+
+  &__comment {
+    font-size: 0.875rem;
+    line-height: 1.714;
+    font-weight: 400;
+    color: var(--color-grey2);
+  }
+}
