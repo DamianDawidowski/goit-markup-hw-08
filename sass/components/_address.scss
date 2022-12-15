@@ -39,7 +39,7 @@
   &__link {
     padding-left: 0.625rem;
     color: inherit;
-    @extend .address; 
+    @extend .address;
 
     &:hover,
     &:focus {
@@ -48,5 +48,11 @@
 
     @extend .highlight;
     @extend .transition;
+  }
+}
+
+@media (max-width: 767px) {
+  .address {
+    display: none;
   }
 }

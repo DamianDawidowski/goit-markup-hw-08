@@ -21,6 +21,8 @@
   --color-white2: #f5f4fa;
   --color-white3: #ececec;
   --color-background: #2f303a66;
+  /* --range-tablet: {min-width: 768px and max-width: 1119px};
+  --range-desktop: {min-width: 1200px};*/
 }
 
 body {
@@ -38,10 +40,21 @@ ul {
 }
 
 .container {
-  width: 75rem;
+  width: 30rem;
   margin: 0 auto;
 }
 
+@media (min-width: 768px) and (max-width: 1119px) {
+  .container {
+    width: 48rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 75rem;
+  }
+}
 .section {
   padding: 5.875rem 0;
 }

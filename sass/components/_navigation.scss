@@ -34,6 +34,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+
 .highlight:focus,
 .highlight:hover {
   color: var(--color-blue);

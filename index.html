@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <div class="modalbackground" data-modal>
+    <div class="modalbackground is-hidden" data-modal>
       <div class="modal">
         <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
         <form
@@ -93,6 +93,15 @@
           <span class="logo__web">Web</span>
           <span class="logo__span">Studio</span>
         </a>
+        <div class="header__mobileMenu">
+          <div class="mobileMenu">
+            <button class="mobileMenu__button menu-toggle js-open-menu">
+              <svg class="xbutton__icon" width="24" height="16">
+                <use href="./images/icons.svg#mobilemenu"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -521,3 +530,4 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+/* new icons mobileMenu mobileClose */

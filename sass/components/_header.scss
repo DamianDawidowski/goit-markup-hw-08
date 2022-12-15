@@ -9,7 +9,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 75rem;
+  /* width: 75rem;*/
 
   @extend .container;
+}
+
+@media (max-width: 767px) {
+  .header__body {
+    height: 3.75rem;
+  }
 }
