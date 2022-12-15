@@ -12,22 +12,22 @@
   outline: none;
 
   &__button {
-    fill: var(--color-black3);
+    color: var(--color-black3);
     padding: 0;
     border: none;
     background: none;
 
-    &:active {
-      fill: var(--color-blue);
+    &:hover {
+      color: var(--color-blue);
     }
 
     &:focus {
-      fill: var(--color-blue);
+      color: var(--color-blue);
     }
   }
 
   &__icon {
-    /*    fill: currentColor;*/
+    fill: currentColor;
   }
 }
 
