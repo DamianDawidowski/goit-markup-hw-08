@@ -11,7 +11,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
-    height: 6.3125rem;
+    /* height: 6.3125rem;*/
+    gap: 1.875rem;
     @extend .container;
   }
 
@@ -57,5 +58,17 @@
   }
   .placeholder__title {
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .placeholder__icon {
+    min-width: 22.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .placeholder__icon {
+    min-width: 16.875rem;
   }
 }

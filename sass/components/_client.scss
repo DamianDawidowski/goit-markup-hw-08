@@ -1,5 +1,5 @@
 .client {
-  min-width: 10.625rem;
+  min-width: 13.125rem;
   min-height: 5.75rem;
   position: relative;
   display: flex;
@@ -25,5 +25,17 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);*/
     fill: currentColor;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .client {
+    min-width: 14.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .client {
+    min-width: 10.625rem;
   }
 }

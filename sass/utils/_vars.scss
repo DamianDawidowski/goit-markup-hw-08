@@ -45,19 +45,8 @@ ul {
   min-width: 20rem;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .container {
-    width: 46.125rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 75rem;
-  }
-}
 .section {
-  padding: 5.875rem 0;
+  padding: 3.75rem 0;
 }
 
 .transition {
@@ -74,4 +63,19 @@ ul {
 
 .button {
   cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 46.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 75rem;
+  }
+  .section {
+    padding: 5.875rem 0;
+  }
 }

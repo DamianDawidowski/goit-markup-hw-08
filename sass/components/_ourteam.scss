@@ -1,10 +1,12 @@
 .ourteam {
   background-color: var(--color-white2);
   width: 100%;
+  @extend .section;
 
   &__main {
     margin: 0 auto;
-    width: 75rem;
+    /*  width: 75rem;*/
+    @extend .container;
   }
 
   &__title {
@@ -18,6 +20,8 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap;*/
+    flex-wrap: wrap;
+    gap: 1.875rem;
   }
 }

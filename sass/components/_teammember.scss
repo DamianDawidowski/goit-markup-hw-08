@@ -5,7 +5,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   border-radius: 0px 0px 0.25rem 0.25rem;
+  width: 28.125rem;
 
   &__name {
     font-size: 1rem;
@@ -23,5 +25,17 @@
 
   &__socials {
     padding: 1rem 2rem 1.125rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .teammember {
+    width: 22.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .teammember {
+    width: 16.875rem;
   }
 }
