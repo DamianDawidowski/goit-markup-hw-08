@@ -16,13 +16,15 @@
   }
 
   &__title {
-    font-size: 2.75rem;
-    line-height: 1.36;
+    font-size: 1.625rem;
+    line-height: 1.61;
     font-weight: 900;
     color: var(--color-white);
-    width: 43.5rem;
+    width: 22.8125rem;
     text-transform: uppercase;
     padding-bottom: 1.875rem;
+    letter-spacing: 0.1em;
+    font-style: normal;
   }
 
   &__button {
@@ -48,5 +50,20 @@
   .effsolutions {
     max-width: 100rem;
     height: 37.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .address {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .effsolutions__title {
+    font-size: 2.75rem;
+    line-height: 1.36;
+    width: 43.5rem;
   }
 }

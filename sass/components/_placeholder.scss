@@ -8,15 +8,24 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
     height: 6.3125rem;
     @extend .container;
   }
 
+  &__elementArea {
+  }
+
   &__icon {
-    padding: 1.5625rem 6.25rem;
+    /*  padding: 1.5625rem 6.25rem;*/
+    height: 7.5rem;
     background-color: var(--color-white2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28.125rem;
   }
 
   &__titlegroup {
@@ -36,5 +45,17 @@
     line-height: 1.714;
     font-weight: 400;
     color: var(--color-grey2);
+  }
+}
+
+@media (max-width: 767px) {
+  .placeholder__elementArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .placeholder__title {
+    text-align: center;
   }
 }
