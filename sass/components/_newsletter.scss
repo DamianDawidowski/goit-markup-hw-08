@@ -1,4 +1,8 @@
 .newsletter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
   &__comment {
     font-size: 0.875rem;
     font-weight: 700;
@@ -7,18 +11,20 @@
   }
 
   &__section {
-    padding: 1.25rem 0 0 0;
+    /*   padding: 1.25rem 0 0 0;*/
     display: inline-block;
   }
 
   &__form {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 35.625rem;
   }
 
   &__input {
-    width: 100%;
-    min-width: 22.375rem;
+    width: 28.125rem;
+
     min-height: 3.125rem;
     padding-left: 1rem;
     background-color: inherit;
@@ -30,7 +36,12 @@
 
   &__label {
     display: inline-block;
-    padding-right: 0.75rem;
+    /* padding-right: 0.75rem;*/
+    padding: 1.25rem 0 0 0;
+  }
+
+  &__buttonArea {
+    padding: 1.25rem 0 0 0;
   }
 
   &__button {
@@ -51,5 +62,15 @@
       font-size: 1rem;
       line-height: 1.875;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .newsletter__input {
+    width: 22.375rem;
+  }
+
+  .newsletter__label {
+    padding-right: 0.75rem;
   }
 }

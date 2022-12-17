@@ -15,7 +15,8 @@
   }
 
   &__subarea {
-    @extend .container;
+    /* @extend .container;*/
+    min-width: 15.375rem;
   }
 
   &__logo {
@@ -60,7 +61,8 @@
   }
 
   &__newsletter {
-    padding: 0.75rem 0 0 4.875rem;
+    padding: 0.75rem 0 0 5.8125rem;
+  
   }
 }
 
@@ -78,6 +80,9 @@
   .footer__area {
     gap: 3.75rem;
   }
+  .newsletter__form {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -88,10 +93,12 @@
 
 @media (min-width: 1200px) {
   .footer__socialarea {
-    padding: 0.75rem 0 6.25rem 4.375rem;
+    padding: 0.75rem 0 6.25rem 5.275rem;
   }
   .footer__area {
     flex-direction: row;
     align-items: stretch;
   }
+ 
+  
 }
