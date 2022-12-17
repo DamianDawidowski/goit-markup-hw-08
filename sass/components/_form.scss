@@ -42,7 +42,7 @@
     border: 1px solid var(--color-grey7);
     border-radius: 4px;
     padding-left: 2.625rem;
-    min-width: 28rem;
+    min-width: 23.125rem;
     min-height: 2.5rem;
     outline: none;
 
@@ -136,5 +136,22 @@
     padding: 0.625rem 0;
 
     @extend .button;
+  }
+}
+
+@media (max-width: 767px) {
+  .address {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+  }
+}
+
+@media (min-width: 1200px) {
+  .form__input {
+    min-width: 28rem;
   }
 }

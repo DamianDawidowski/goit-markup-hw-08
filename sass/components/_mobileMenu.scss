@@ -37,6 +37,7 @@
   &__icon {
     color: var(--color-black3);
     cursor: pointer;
+    fill: currentColor;
 
     &:focus,
     &:hover {
