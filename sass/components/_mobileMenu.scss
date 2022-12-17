@@ -37,10 +37,11 @@
   &__icon {
     color: var(--color-black3);
     cursor: pointer;
-  }
-  &:focus,
-  &:hover {
-    color: var(--color-blue);
+
+    &:focus,
+    &:hover {
+      color: var(--color-blue);
+    }
   }
 
   &__list {
