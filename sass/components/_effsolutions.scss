@@ -1,12 +1,12 @@
 .effsolutions {
   background-image: linear-gradient(var(--color-background), var(--color-background)),
     url(../images/banners/background.jpg);
-  max-width: 100rem;
+  max-width: 30rem;
   margin: 0 auto;
 
   &__section {
-    height: 37.5rem;
-    width: 75rem;
+    height: 25rem;
+    /* width: 30rem; */
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -36,5 +36,17 @@
     border-color: var(--color-blue);
     width: 12.4375rem;
     padding: 0.625rem 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .effsolutions {
+    max-width: 48rem;
+  }
+}
+@media (min-width: 1200px) {
+  .effsolutions {
+    max-width: 100rem;
+    height: 37.5rem;
   }
 }

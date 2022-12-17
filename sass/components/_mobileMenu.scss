@@ -18,28 +18,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin: 0;
     padding: 0;
-    background-color: transparent;
-    cursor: pointer;
+    /*background-color: transparent;*/
+    background-color: var(--color-black3);
     border: none;
     border-radius: 50%;
     outline: none;
     color: var(--color-black3);
-
-    __icon &:focus,
-    &:hover {
-      color: var(--color-blue);
-    }
   }
-
-  @media (min-width: 768px) {
-    .menu-toggle {
-      display: none;
-    }
+  &__icon {
+    cursor: pointer;
+  }
+  &:focus,
+  &:hover {
+    color: var(--color-blue);
   }
 }
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
 .mobileMenu.is-open {
   transform: translateX(0);
 }

@@ -6,8 +6,8 @@
   justify-content: center;
   margin: 0;
   padding: 0.625rem 0.9375rem 0.625rem 0;
-  background-color: transparent;
-
+  /*background-color: transparent;*/
+  background-color: var(--color-blue);
   border: 0;
   outline: none;
 
@@ -15,7 +15,7 @@
     color: var(--color-black3);
     padding: 0;
     border: none;
-    background: none;
+    /*background: none;*/
 
     &:hover {
       color: var(--color-blue);
@@ -50,4 +50,10 @@
   border: none;
 
   outline: none;
+}
+
+@media (min-width: 768px) {
+  .mobileButton {
+    display: none;
+  }
 }

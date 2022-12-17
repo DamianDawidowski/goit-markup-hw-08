@@ -7,7 +7,7 @@
   text-decoration: none;
 
   &__section {
-    display: flex;
+    /*  */
     align-items: center;
     color: var(--color-grey2);
     fill: var(--color-grey2);
@@ -54,5 +54,12 @@
 @media (max-width: 767px) {
   .address {
     display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .address {
+    flex-direction: column;
+  
   }
 }
