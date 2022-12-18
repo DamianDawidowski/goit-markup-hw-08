@@ -17,14 +17,6 @@
     padding-top: 0.125rem;
     cursor: pointer;
     color: var(--color-black3);
-
-    &:hover {
-      color: var(--color-blue);
-    }
-
-    &:focus {
-      color: var(--color-blue);
-    }
   }
 
   &__icon {
@@ -36,8 +28,14 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .xbutton__icon {
-    color: var(--color-black3);
+@media (max-width: 1199px) {
+  .xbutton__button {
+    &:hover {
+      color: var(--color-blue);
+    }
+
+    &:focus {
+      color: var(--color-blue);
+    }
   }
 }
