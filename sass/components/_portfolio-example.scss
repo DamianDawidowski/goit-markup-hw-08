@@ -18,7 +18,8 @@
 
   &__bluewindow {
     position: absolute;
-    width: 23.125rem;
+    width: 28.125rem;
+
     height: 18.375rem;
     background-color: var(--color-blue);
     font-size: 1.125rem;
@@ -56,5 +57,17 @@
     line-height: 1.875;
     font-weight: 400;
     color: var(--color-grey2);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-example__bluewindow {
+    width: 22.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-example__bluewindow {
+    width: 23.125rem;
   }
 }
