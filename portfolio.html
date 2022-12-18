@@ -19,12 +19,127 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
+    <div class="modalbackground is-hidden" data-modal>
+      <div class="modal">
+        <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
+        <form
+          class="form"
+          autocomplete="off"
+          method="POST"
+          action="javascript:void(0);"
+          id="form-data"
+        >
+          <span class="form__label">Imie</span>
+          <label class="form__section">
+            <svg width="12" height="12" class="form__icon">
+              <use href="./images/icons.svg#icon-Vector2"></use>
+            </svg>
+            <input class="form__input" type="text" name="name" required />
+          </label>
+          <span class="form__label">Telefon</span>
+          <label class="form__section">
+            <svg width="12" height="12" class="form__icon">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+            <input class="form__input" type="tel" pattern="[0-9]{9}" name="phone" required />
+          </label>
+          <span class="form__label">Email</span>
+          <label class="form__section">
+            <svg width="12" height="12" class="form__icon">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+            <input class="form__input" type="email" name="email" required />
+          </label>
+          <span class="form__label">Komentarz</span>
+          <label class="form__section">
+            <textarea
+              class="form__area"
+              id="id-comment"
+              name="comment"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+          <label class="form__terms" for="terms-and-conditions">
+            <input
+              class="form__checkbox"
+              id="terms-and-conditions"
+              type="checkbox"
+              required
+              name="terms-and-conditions"
+            />
+            <span
+              >Oświadczam iż akceptuję <a class="form__link" href="#">Regulamin</a> i
+              <a class="form__link" href="#">Politykę Prywatności.</a></span
+            >
+          </label>
+          <div class="form__buttonarea">
+            <button class="form__button" type="submit">Wyślij</button>
+          </div>
+        </form>
+        <div class="xbutton">
+          <div class="xbutton__body">
+            <button data-modal-close class="xbutton__button">
+              <svg class="xbutton__icon" width="14" height="14">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobileMenu js-menu-container" id="mobile-menu">
+      <button class="mobileMenu__button js-close-menu">
+        <svg class="mobileMenu__icon" width="14" height="14">
+          <use href="./images/icons.svg#mobileClose"></use>
+        </svg>
+      </button>
+      <div class="mobileMenu__list">
+        <div class="mobileMenu__item">
+          <a href="index.html" class="mobileMenu__link">Agencja</a>
+        </div>
+        <div class="mobileMenu__item">
+          <a href="portfolio.html" class="mobileMenu__link mobileMenu__link--active">Portfolio</a>
+        </div>
+        <div class="mobileMenu__item"><a href="" class="mobileMenu__link">Kontakty</a></div>
+        <div class="mobileMenu__phone">
+          <a class="mobileMenu__phoneLink" href="tel:+48111111111">+48 111 111 111</a>
+        </div>
+        <div class="mobileMenu__mail">
+          <a class="mobileMenu__mailLink" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+        <div class="mobileMenu__item">
+          <div class="mobileMenu__socialList">
+            <a class="mobileMenu__socialLinks mobileMenu__socialLinks--leftpaddingNone" href=""
+              >Instagram</a
+            >
+            <a class="mobileMenu__socialLinks" href="">Twitter</a>
+            <a class="mobileMenu__socialLinks" href="">Facebook</a>
+            <a class="mobileMenu__socialLinks mobileMenu__socialLinks--borderNone" href=""
+              >Linkedin</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <div class="header__body">
         <a class="logo" href="#">
           <span class="logo__web">Web</span>
           <span class="logo__span">Studio</span>
         </a>
+        <div class="header__mobileButton">
+          <div class="mobileButton">
+            <button
+              class="mobileButton__button menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="mobileButton__icon" width="24" height="16">
+                <use href="./images/icons.svg#mobileMenu"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -63,11 +178,21 @@
         <div>
           <nav>
             <ul class="buttons">
-              <li><button class="buttons__button" type="button">Wszystkie</button></li>
-              <li><button class="buttons__button" type="button">Strony</button></li>
-              <li><button class="buttons__button" type="button">Aplikacje</button></li>
-              <li><button class="buttons__button" type="button">Dizajn</button></li>
-              <li><button class="buttons__button" type="button">Marketing</button></li>
+              <li class="buttons__element buttons__element--width1">
+                <button class="buttons__button" type="button">Wszystkie</button>
+              </li>
+              <li class="buttons__element buttons__element--width2">
+                <button class="buttons__button" type="button">Strony</button>
+              </li>
+              <li class="buttons__element buttons__element--width3">
+                <button class="buttons__button" type="button">Aplikacje</button>
+              </li>
+              <li class="buttons__element buttons__element--width4">
+                <button class="buttons__button" type="button">Dizajn</button>
+              </li>
+              <li class="buttons__element buttons__element--width5">
+                <button class="buttons__button" type="button">Marketing</button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -81,13 +206,46 @@
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowski i ataków na
                     niezabezpieczone serwery konkurencji
                   </div>
-                  <img
+
+                  <picture>
+                    <source
+                      media="screen and (max-width: 767px)"
+                      srcset="
+                        images/team/webPageOnLaptop.jpg,
+                        images/team/webPageOnLaptop_2x.jpg 2x
+                      "
+                      width="450"
+                    />
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        images/team/webPageOnLaptop.jpg,
+                        images/team/webPageOnLaptop_2x.jpg 2x
+                      "
+                      width="354"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        images/team/webPageOnLaptop.jpg,
+                        images/team/webPageOnLaptop_2x.jpg 2x
+                      "
+                      width="370"
+                    />
+                    <img
+                      class="portfolio-example__image"
+                      src="images/portfolio/webPageOnLaptop.jpg"
+                      alt="Obraz strony internetowej na laptopie"
+                    />
+                  </picture>
+
+                  <!--    <img
                     class="portfolio-example__image"
                     src="images/portfolio/webPageOnLaptop.jpg"
                     alt="Obraz strony internetowej na laptopie"
                     width="370"
                     height="294"
-                  />
+                  />-->
                 </div>
                 <section class="portfolio-example__section">
                   <hgroup class="portfolio-example__titlegroup">
@@ -304,10 +462,15 @@
           </div>
           <address class="footer__addressarea">
             <div class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</div>
-            <a class="footer__address footer__address--padding" href="mailto:info@example.com">
+            <a
+              class="footer__address footer__address--greyFont footer__address--padding"
+              href="mailto:info@example.com"
+            >
               info@example.com
             </a>
-            <a class="footer__address" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="footer__address footer__address--greyFont" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
           </address>
         </div>
         <div class="footer__socialarea">
@@ -365,12 +528,14 @@
                     required
                   />
                 </label>
-                <button class="newsletter__button" type="submit">
-                  <span class="newsletter__button--comment">Zapisz się</span>
-                  <svg class="socials__icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-icon-send"></use>
-                  </svg>
-                </button>
+                <div class="newsletter__buttonArea">
+                  <button class="newsletter__button" type="submit">
+                    <span class="newsletter__button--comment">Zapisz się</span>
+                    <svg class="socials__icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                  </button>
+                </div>
               </form>
             </div>
           </div>
@@ -378,5 +543,9 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
+/* new icons mobileMenu mobileClose */ @media (min-width: 768px) and (max-width: 1199px) {
+.effsolutions { max-width: 48rem; } } @media (min-width: 1200px) { .effsolutions { max-width:
+100rem; height: 37.5rem; } } display: flex; align-items: center; justify-content: center;
