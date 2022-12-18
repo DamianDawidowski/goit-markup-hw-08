@@ -1,8 +1,9 @@
 .effsolutions {
   background-image: linear-gradient(var(--color-background), var(--color-background)),
-    url(../images/banners/background.jpg);
+    url(../images/banners/backgroundMobile@1.jpg);
   max-width: 30rem;
   margin: 0 auto;
+  background-size: cover;
 
   &__section {
     height: 25rem;
@@ -44,16 +45,10 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .effsolutions {
     max-width: 48rem;
+    background-image: linear-gradient(var(--color-background), var(--color-background)),
+      url(../images/banners/backgroundTablet@1.jpg);
   }
-}
-@media (min-width: 1200px) {
-  .effsolutions {
-    max-width: 100rem;
-    height: 37.5rem;
-  }
-}
 
-@media (min-width: 768px) and (max-width: 1199px) {
   .address {
     flex-direction: column;
     gap: 0.6rem;
@@ -61,9 +56,44 @@
 }
 
 @media (min-width: 1200px) {
+  .effsolutions {
+    max-width: 100rem;
+    height: 37.5rem;
+    background-image: linear-gradient(var(--color-background), var(--color-background)),
+      url(../images/banners/backgroundDesktop@1.jpg);
+  }
+
   .effsolutions__title {
     font-size: 2.75rem;
     line-height: 1.36;
     width: 43.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .effsolutions {
+    background-image: linear-gradient(var(--color-background), var(--color-background)),
+      url(../images/banners/backgroundTablet@2.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .effsolutions {
+    background-image: linear-gradient(var(--color-background), var(--color-background)),
+      url(../images/banners/backgroundDesktop@2.jpg);
+  }
+}
+
+@media (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .effsolutions {
+    background-image: linear-gradient(var(--color-background), var(--color-background)),
+      url(../images/banners/backgroundMobile@2.jpg);
   }
 }
