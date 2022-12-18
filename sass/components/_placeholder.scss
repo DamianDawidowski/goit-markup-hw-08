@@ -11,7 +11,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
-    /* height: 6.3125rem;*/
     gap: 1.875rem;
     @extend .container;
   }
@@ -20,7 +19,6 @@
   }
 
   &__icon {
-    /*  padding: 1.5625rem 6.25rem;*/
     height: 7.5rem;
     background-color: var(--color-white2);
     display: flex;
