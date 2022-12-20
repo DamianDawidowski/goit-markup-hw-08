@@ -15,6 +15,8 @@
     fill: var(--color-grey4);
     padding-top: 3.125rem;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
 
   @extend .section;
