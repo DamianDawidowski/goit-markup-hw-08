@@ -63,6 +63,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .newsletter__input {
+    width: 20rem;
+  }
+}
+
 @media (min-width: 768px) {
   .address {
     flex-direction: column;
