@@ -5,12 +5,11 @@
   flex-direction: column;
   align-items: center;
   @extend .section;
-  @extend .container;
 
   &__main {
     margin: 0 auto;
     /*  width: 75rem;*/
-    width: 100%;
+    @extend .container;
   }
 
   &__title {

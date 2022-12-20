@@ -66,17 +66,23 @@ ul {
   cursor: pointer;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 450px) {
   .container {
-    width: 46.125rem;
+    width: 28.125rem;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
-    width: 75rem;
+  @media (min-width: 768px) {
+    .container {
+      width: 46.125rem;
+    }
   }
-  .section {
-    padding: 5.875rem 0;
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 75rem;
+    }
+    .section {
+      padding: 5.875rem 0;
+    }
   }
 }
