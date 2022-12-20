@@ -47,11 +47,6 @@
     background-image: linear-gradient(var(--color-background), var(--color-background)),
       url(../images/banners/backgroundTablet@1.jpg);
   }
-
-  .address {
-    flex-direction: column;
-    gap: 0.6rem;
-  }
 }
 
 @media (min-width: 1200px) {

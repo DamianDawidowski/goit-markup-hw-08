@@ -69,13 +69,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .address {
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-}
-
 @media (min-width: 1200px) {
   .newsletter {
     align-items: stretch;
